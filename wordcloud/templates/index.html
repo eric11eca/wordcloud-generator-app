@@ -1,0 +1,74 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/layout.css" />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <script scripttype="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <meta name="description" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main-window" class="main-content">
+        <h1 class="intro">Word Cloud Generator</h1>
+        <!--h3 class="intro-content"> A toolbox for logic, computation, and automaton simulation and functions.</h3-->
+
+        <div id="customize" class="truth-content btn-group" style="width:40%">
+            <!--input type="text" id="length" class="form-control" placeholder="Length(0-1)" aria-label="Length">
+            <span class="input-group-text"></span>
+            <input type="text" id="width" class="form-control" placeholder="Width(0-1)" aria-label="Branch Width">
+            <span class="input-group-text"></span-->
+            <button id="cloud-shape" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cloud Shape
+            </button>
+            <ul id="shapes" class="dropdown-menu" aria-labelledby="cloud-shape">
+                <li><a class="dropdown-item">africa</a></li>
+                <li><a class="dropdown-item">cross</a></li>
+                <li><a class="dropdown-item">dove</a></li>
+                <li><a class="dropdown-item">music</a></li>
+                <li><a class="dropdown-item">texas</a></li>
+                <li><a class="dropdown-item">usa</a></li>
+            </ul>
+            <button id="color-map" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Color Map
+            </button>
+            <ul id="colors" class="dropdown-menu" aria-labelledby="color-map">
+                <li><a class="dropdown-item">plasma</a></li>
+                <li><a class="dropdown-item">viridis</a></li>
+                <li><a class="dropdown-item">inferno</a></li>
+                <li><a class="dropdown-item">YlGnBu</a></li>
+                <li><a class="dropdown-item">spring</a></li>
+                <li><a class="dropdown-item">summer</a></li>
+                <li><a class="dropdown-item">autumn</a></li>
+                <li><a class="dropdown-item">winter</a></li>
+                <li><a class="dropdown-item">Spectral</a></li>
+            </ul>
+        </div>
+
+        <div class="truth-content form-floating">
+            <textarea class="form-control" id="words-input"></textarea>
+            <label for="words-input">Input Text Here</label>
+        </div>
+
+        <div class="btn-group" role="group">
+            <button type="button" id="generate" class="btn btn-primary">Generate</button>
+            <button type="button" id="download" class="btn btn-primary">Download</button>
+        </div>
+
+        <div id="wordcloud" class="truth-content"></div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../static/js/three.min.js"></script>
+    <script src="../static/js/vanta.clouds.min.js"></script>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+</body>
+
+
+</html>

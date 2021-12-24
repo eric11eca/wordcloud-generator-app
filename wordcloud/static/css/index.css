@@ -1,0 +1,66 @@
+.main-content {
+  width: initial;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.truth-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+#wordcloud {
+  margin-bottom: 30px;
+}
+
+ul.dropdown-menu {
+    position: relative;
+    z-index: 10000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btn-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.intro {
+  font-size: 2.5rem;
+  line-height: 57px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding: 0px;
+  margin: 1% 0 1% 0;
+}
+
+.intro-content {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: white;
+  margin: 15px 0;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
